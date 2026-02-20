@@ -1,0 +1,343 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+  font-family: "Roboto Mono", monospace;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    color: rgb(85,85,85);
+}
+
+a,
+.btn{
+    transition: all 300ms ease;
+}
+
+nav,
+.nav-links {
+    display:flex;}
+nav{
+    justify-content:space-around;
+     align-items:center;
+    height: 17vh;
+}
+.nav-links { gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+a{
+    color: rgb(245, 10, 10);
+    text-decoration:none ;
+    text-decoration-color:white;
+}
+a:hover{
+    color:rgb(0, 153, 255);
+    text-decoration:wavy;
+    text-decoration-color:rgb(181,181, 181) ;
+}
+.logo{
+font-size: 2rem;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.logo:hover{
+    color:rgba(0, 153, 255);
+    cursor: default;
+}
+/*Hamburger Menu */
+
+#hamburger-nav{
+    display:none;
+}
+.hamburger-menu{
+    position: relative;
+    display:inline-block;
+}
+.hamburger-icon{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+}
+.hamburger-icon span{
+    width: 100%;
+    height: 2px ;
+    background-color: rgb(245, 10, 10);
+    transition: all 0.3 ease-in-out;
+}
+.menu-links{
+    position:absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3 ease-in-out;
+}
+.menu-links a{
+    display:block;
+    padding:10px;
+    text-align: center;
+    font-size: 1.5 rem;
+    color:black;
+    text-decoration: none;
+    transition:  all 0.3 ease-in-out;
+}
+.menu-links li{
+    list-style: none;
+}
+.menu-links.open{
+    max-height: 300px;
+}
+.hamburger-icon.open span:first-child{
+    transform: rotate(45deg) translate(10px,5px);
+}
+.hamburger-icon.open span:nth-child(2){
+    opacity: 0;
+}
+.hamburger-icon.open span:last-child{
+    transform: rotate(-45deg) translate(10px,-5px);
+}
+.hamburger-icon span:first-child{
+    transform:none;
+}
+.hamburger-icon span:first-child{
+    opacity: 1;
+}
+.hamburger-icon span:first-child{
+    transform: none;
+}
+/*sections*/
+section{
+    padding-top:4vh ;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+.section-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+}
+/* profile section*/
+#profile{
+    display: flex;
+    justify-content: center;
+    gap:4 rem;
+    height: 80vh;
+}
+.about-pic{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.sections__pic-container1{
+    display: flex;
+    height: 550px;
+    width: 550px;
+    margin: auto 0;
+}
+.sections__pic-container2 {
+    max-width: 400px;
+    aspect-ratio: 1 / 1;
+}
+.sections__pic-container2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   /* or contain */
+}
+.section__text{
+    align-self: center;
+    text-align: center;
+}
+.section__text p{
+    font-weight: 600;
+}
+.section__text__p1{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.section__text_p2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+.title-1{
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+#social-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+/* icon*/
+.icon{
+    cursor: pointer;
+    height: 6rem;
+}
+.icon-checkmark{
+    cursor: pointer;
+    height: 4rem;
+}
+/*buttons*/
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 10rem;
+    border-radius:2rem ;
+}
+.btn-color-1{
+    border: 2px solid rgb(229, 211, 211);
+     
+}
+.btn-color-2{
+    border: rgb(53,53,53);
+    border: 2px solid rgb(155, 148, 148);
+}
+.btn-color-1:hover,.btn-color-2:hover{
+    cursor: pointer;
+}
+.btn-color-1,
+.btn-color-2:hover{
+    background-color: rgb(53,53,53);
+    color: white;
+}
+.btn-color-1:hover{
+    background: rgb(0,0,0);
+}
+.btn-color-2{
+    background: none;
+}
+.btn-color-2:hover{
+    border: rgb(255,255,255)0.1 rem solid;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+#about{
+    position: relative;
+}
+.about-containers{
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+
+}
+.about-details-containers{
+    justify-content: center;
+    flex-direction: column;
+    flex:1;
+}
+.about-containers,
+.about-details-containers{
+    display: flex;
+}
+.about-pic{
+    border-radius: 2rem;
+}
+.arrow{
+    position:absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+}
+.details-container{
+    padding: 1.5rem;
+    flex:1;
+    background-color: rgb(241, 252, 34);
+    border-radius: 2rem;
+    border: rgb(53, 53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    text-align: center;
+
+}
+.section-container{
+    gap: 4rem;
+    height: 80%;
+}
+.sections__pic-container{
+    height: 400px;
+    width: 400px;
+    margin:auto 0;
+}
+
+/*Skill section*/
+#Skill
+{
+    position: relative;
+}
+.Skill-sub-title{
+    color: rgb(85,85,85);
+    font-weight: (600);
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.Skill-details-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.article-container{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+}
+article{
+    display: flex;
+    width: 10rem;
+    justify-content: space-around;
+    gap:0.5rem;
+}
+article.icon{
+    cursor: default;
+}
+
+/* projects*/
+#projects
+{
+    position: relative;
+}
+
+
+/* contact section*/
+.contact{
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    color: rgb(252, 254, 255);
+    border: rgb(53, 53,53) 0.1rem solid;
+    border-color: rgb(42, 40, 40);
+    background-color: rgb(30, 211, 60);
+
+    font-weight: 800;
+}
