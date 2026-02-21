@@ -13,3 +13,36 @@
     }
     
 }
+@media screen and (max-width: 768px) {
+
+  section {
+    margin: 0 1rem;
+    height: auto;
+  }
+
+  #profile {
+    flex-direction: column;
+    height: auto;
+    gap: 2rem;
+  }
+
+  .sections__pic-container1 {
+    width: 300px;
+    height: 300px;
+  }
+
+  .section-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .btn-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .arrow {
+    display: none;
+  }
+
+}
