@@ -9,6 +9,20 @@
   }
 
 }
+section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Fix mobile viewport issue */
+@media (max-width: 768px) {
+  section {
+    min-height: 100svh; /* better for mobile */
+  }
+}
 
 @media screen and (max-width:768px){
 
